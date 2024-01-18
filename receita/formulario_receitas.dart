@@ -34,7 +34,7 @@ class RecForm extends StatelessWidget {
                     _form.currentState!.save();
                     print(_formData);
                   }
-                  Navigator.pushNamed(context, '/minhasReceitas'); //route
+                  Navigator.pop(context, '/minhasReceitas'); //route
                   Provider.of<Receitas>(context, listen: false).put(Receita(
                       id: _formData['id'] ?? '',
                       nome: _formData['nome'] ?? '',

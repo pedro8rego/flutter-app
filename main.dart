@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:provider/provider.dart';
 import 'package:smart_plate/contactos.dart';
 import 'package:smart_plate/dados/gerir_dados.dart';

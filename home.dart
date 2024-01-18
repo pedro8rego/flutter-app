@@ -15,6 +15,7 @@ class _HomeState extends State<Home> {
         title: const Text('SmartPlate'),
         centerTitle: true,
         backgroundColor: Colors.amber[700],
+        foregroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -36,8 +37,8 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context, '/minhasReceitas'); //route
               },
               style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.amber[700]),
-              ),
+                  backgroundColor: MaterialStatePropertyAll(Colors.amber[700]),
+                  foregroundColor: MaterialStatePropertyAll(Colors.white)),
               child: const Text('Minhas Receitas')),
           const SizedBox(height: 20),
           ElevatedButton(
@@ -45,7 +46,8 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context, '/lista_compras'); //route
               },
               style: ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber[700])),
+                  backgroundColor: MaterialStatePropertyAll(Colors.amber[700]),
+                  foregroundColor: MaterialStatePropertyAll(Colors.white)),
               child: const Text('Lista de Compras')),
           const SizedBox(height: 20),
           ElevatedButton(
@@ -53,7 +55,8 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context, '/contactos'); //route
               },
               style: ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.amber[700])),
+                  backgroundColor: MaterialStatePropertyAll(Colors.amber[700]),
+                  foregroundColor: MaterialStatePropertyAll(Colors.white)),
               child: const Text('Contactos')),
         ]),
       ),
